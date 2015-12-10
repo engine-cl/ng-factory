@@ -1,6 +1,6 @@
 __author__ = 'themanda'
 import unittest
-from factory import *
+from factory import factorize, ArgumentError, NonExistentTypeError, NonExistentModuleError
 
 
 class FactoryTests(unittest.TestCase):
