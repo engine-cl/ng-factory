@@ -27,6 +27,7 @@ class FactoryTests(unittest.TestCase):
         self.assertEqual(type(f), type(manual))
 
     def test_type_exception(self):
+        """ Test factorize a class x from module y are equal to another instance type """
         f = factorize(module='factory', object_type='NonExistentTypeError')
         manual = NonExistentTypeError('NonExistentTypeError')
         self.assertEqual(type(f), type(manual))
