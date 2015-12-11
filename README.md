@@ -1,5 +1,5 @@
 ### python generic factory PoC
-with TDD 100% coverage 
+practice factory pattern TDD and Exceptions
 
 ## status
 [![Build Status](https://travis-ci.org/mnothic/factory_poc.svg)](https://travis-ci.org/mnothic/factory_poc)
