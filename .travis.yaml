@@ -4,7 +4,8 @@ python:
   - "3.4"
   - "3.5"
   - "nightly" # currently points to 3.6-dev
-script: python test.py
+script: 
+  - python test.py
 branches:
   only:
     - master
