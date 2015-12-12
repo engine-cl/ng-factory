@@ -1,5 +1,8 @@
 __author__ = 'themanda'
-import unittest
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
 from factory import factorize, ArgumentError, NonExistentTypeError, NonExistentModuleError
 
 
