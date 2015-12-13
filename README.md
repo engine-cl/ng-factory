@@ -4,7 +4,7 @@
 ## python 3.x generic factory
 Python 3 factory pattern implementation proof of concept.
 
-Python 2 is not interesting anymore remeber ubuntu start the migration.
+Python 2 is not interesting anymore.
 
 ## Documentation
 - For the moment test.py explained it's self
