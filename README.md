@@ -1,7 +1,10 @@
-### python 3.x generic factory PoC
-practice factory pattern TDD and Exceptions
+### python 3.x generic factory
+Python 3 factory pattern implementation proof of concept
+python 2 is not interesting anymore remeber ubuntu start the migration.
 
-Note: python 2 is not supported
+### Documentation
+- for the moment test.py explained it's self
+
 ## status
 [![Build Status](https://travis-ci.org/mnothic/factory_poc.svg)](https://travis-ci.org/mnothic/factory_poc)
 
