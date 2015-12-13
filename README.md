@@ -1,6 +1,7 @@
-### python generic factory PoC
+### python 3.x generic factory PoC
 practice factory pattern TDD and Exceptions
 
+Note: python 2 is not supported
 ## status
 [![Build Status](https://travis-ci.org/mnothic/factory_poc.svg)](https://travis-ci.org/mnothic/factory_poc)
  
