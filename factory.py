@@ -34,7 +34,7 @@ class ArgumentError(ValueError):
     """
     def __init__(self):
         msg = "Error: missing values in call of factorize"
-        super().__init__(msg)
+        super(self).__init__(msg)
 
 
 class NonExistentTypeError(NotImplementedError):
@@ -43,7 +43,7 @@ class NonExistentTypeError(NotImplementedError):
     """
     def __init__(self, *args, **kwargs):
         msg = "Error: can't factorize the object type {}".format(args)
-        super().__init__(msg)
+        super(self).__init__(msg)
 
 
 class NonExistentModuleError(ImportError):
@@ -52,4 +52,4 @@ class NonExistentModuleError(ImportError):
     """
     def __init__(self, *args, **kwargs):
         msg = "Error: can't load the module {}".format(args)
-        super().__init__(msg)
+        super(self).__init__(msg)
