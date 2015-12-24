@@ -3,4 +3,12 @@ python:
   - "3.4"
   - "3.5"
   - "nightly" # currently points to 3.6-dev
-script: python test.py
+
+install:
+  - pip install codecov
+
+script:
+  - coverage run test.py
+
+after_success:
+  - codecov
