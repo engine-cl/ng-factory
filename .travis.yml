@@ -6,9 +6,9 @@ python:
 
 install:
   - pip install codecov
-
+  - python setup -q install
 script:
-  - coverage run test.py
+  - coverage run test/factory.py
 
 after_success:
   - codecov
