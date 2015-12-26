@@ -4,8 +4,12 @@
 # Description
 __author__ = 'themanda'
 
-from distutils.core import setup find_packages
-
+from distutils.core import setup
+try:
+    from setup_tools import find_packages
+except ImportError:
+    def find_packages():
+        return ['ng_factory']
 setup(name='ng_factory',
       version='1.0',
       description='Factory ',
