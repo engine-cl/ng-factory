@@ -4,7 +4,7 @@
 # Description
 __author__ = 'themanda'
 
-from distutils.core import setup
+from distutils.core import setup find_packages
 
 setup(name='ng_factory',
       version='1.0',
@@ -12,5 +12,5 @@ setup(name='ng_factory',
       author='Jorge A. Medina',
       author_email='jorge_at_engine_dot_cl',
       url='http://github.com/mnothic/factory_poc',
-      packages=['ng_factory'],
+      packages=find_packages(),
       license='BSD')
