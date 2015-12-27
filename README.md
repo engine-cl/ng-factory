@@ -5,7 +5,7 @@
 Python 3 factory pattern implementation.
 
 
-## Documentation
+## Overview
 The principal idea is keep it simple and readable, the main function provide a mechanism to factorize any object
 with introspection and don't make the horrible code conditions like in factory examples:
 ```python
@@ -18,7 +18,12 @@ if type == 'MyOtherClass':
 for python 2 you have pypi module named [Factory](https://pypi.python.org/pypi/Factory/) and maybe is better for you 
 with more functionality and complexity.
 
-
+## Install
+```shell
+git clone https://github.com/engine-cl/ng_factory.git
+cd ng-factory
+python3 setup.py install
+```
 ## Example
 ```python
 from ng_factory import factorize
