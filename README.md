@@ -40,7 +40,7 @@ class persistence(object):
         data = data
         
     def save(this):
-        this._dbcon.commit(data.persist())
+        this._dbcon.commit(this.data.persist())
 
 class DataObjectTypeOne(object):
     """ assumes all serializable function to format the data output """
