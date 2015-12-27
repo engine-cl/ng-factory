@@ -18,6 +18,6 @@ from ng_factory import factorize
 try:
     f = factorize(module='collections', object_type='named_tuple')
 except NonExistentModuleError as e:
-    print("{}".format(e)
+    print("{}".format(e))
 
 ```
