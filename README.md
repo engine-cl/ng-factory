@@ -26,5 +26,4 @@ try:
     my_counter = factorize(module='collections', object_type='Counter')
 except NonExistentModuleError as e:
     print("{}".format(e))
-
 ```
