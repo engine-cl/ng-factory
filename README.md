@@ -27,8 +27,9 @@ python3 setup.py install
 ```
 
 ## Test
+```python
 python test/factory.py
-
+```
 ## Example
 ```python
 from ng_factory import factorize
