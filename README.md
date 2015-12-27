@@ -8,8 +8,8 @@ Python 3 factory pattern implementation.
 ## Documentation
 The principal idea is keep it simple and readable, the main function is provide a mechanism to factorize object
 with introspection and don't make the horrible factory if type == 'MyClass': return MyClass() so for it this module
-factorize any class from any module and works only in python 3 for python 2 you have pypi module named factory and
-maybe is better for you with more functionality and complexity.
+factorize any class from any module and works only in python 3 for python 2 you have pypi module named 
+[Factory](https://pypi.python.org/pypi/Factory/) and maybe is better for you with more functionality and complexity.
 
 
 ## Example
