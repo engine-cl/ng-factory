@@ -33,16 +33,17 @@ your business logic code like persistence layer or another layer.
 ```python
 from ng_factory import factorize
 class persistence(object):
- 
+    """ assumes all code needed to connect db and commit data transaction """
     def __init__(this, data):
+        import database
+        _dbcon = database.get_connection()
         data = data
         
-    @staticmethod
-    def save():
-        _dbcon.commit(data.persist())
+    def save(this):
+        this._dbcon.commit(data.persist())
 
 class DataObjectTypeOne(object):
-
+    """ assumes all serializable function to format the data output """
     @staticmethod
     def persist():
         return this.get_save_format()
