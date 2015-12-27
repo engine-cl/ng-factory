@@ -16,7 +16,7 @@ maybe is better for you with more functionality and complexity.
 ```python
 from ng_factory import factorize
 try:
-    f = factorize(module='collections', object_type='named_tuple')
+    my_counter = factorize(module='collections', object_type='Counter')
 except NonExistentModuleError as e:
     print("{}".format(e))
 
