@@ -16,22 +16,38 @@ def factory(type):
 for python 2 you have pypi module named [Factory](https://pypi.python.org/pypi/Factory/) and maybe is better for you 
 with more functionality and complexity.
 
-## Install
+## Installation
 ```shell
 git clone https://github.com/engine-cl/ng_factory.git
 cd ng-factory
 python3 setup.py install
 ```
 
-## Test
+## Testing
 ```python
 python test/factory.py
 ```
 ## Example
+Create any module with your atomic class encapsulation then factorize object to inject the dependencies into 
+your business logic code like persistence layer or another layer.
 ```python
 from ng_factory import factorize
-try:
-    my_counter = factorize(module='collections', object_type='Counter')
-except NonExistentModuleError as e:
-    print("{}".format(e))
+class persistence(object):
+ 
+    def __init__(this, data):
+        data = data
+        
+    @staticmethod
+    def save():
+        _dbcon.commit(data.persist())
+
+class DataObjectTypeOne(object):
+
+    @staticmethod
+    def persist():
+        return this.get_save_format()
+
+db = persistence(factorize(DataObjectTypeOne))
+db.save()
+
 ```
