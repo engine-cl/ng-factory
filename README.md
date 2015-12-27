@@ -9,10 +9,11 @@ Python 3 factory pattern implementation.
 The principal idea is keep it simple and readable, the main function provide a mechanism to factorize any object
 with introspection and don't make the horrible code conditions like in factory examples:
 ```python
-if type == 'MyClass': 
-    return MyClass()
-if type == 'MyOtherClass': 
-    return MyOtherClass()
+def factory(type):
+    if type == 'MyClass': 
+        return MyClass()
+    if type == 'MyOtherClass': 
+        return MyOtherClass()
 ``` 
  So for it this module factorize any class from any module and works only in python 3 
 for python 2 you have pypi module named [Factory](https://pypi.python.org/pypi/Factory/) and maybe is better for you 
