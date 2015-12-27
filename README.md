@@ -25,6 +25,10 @@ git clone https://github.com/engine-cl/ng_factory.git
 cd ng-factory
 python3 setup.py install
 ```
+
+## Test
+python test/factory.py
+
 ## Example
 ```python
 from ng_factory import factorize
