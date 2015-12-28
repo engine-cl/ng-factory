@@ -17,7 +17,7 @@ for python 2 you have pypi module named [Factory](https://pypi.python.org/pypi/F
 with more functionality and complexity.
 
 ## Installation
-```shell
+```bash
 git clone https://github.com/engine-cl/ng_factory.git
 cd ng-factory
 python3 setup.py install
