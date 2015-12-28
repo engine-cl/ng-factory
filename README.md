@@ -28,16 +28,16 @@ python3 setup.py install
 python test/factory.py
 ```
 ## Example
-Create any module with your atomic class encapsulation then factorize object to inject the dependencies into 
-your business logic code like persistence layer or another layer.
+Create any module with your atomic class encapsulation with GOPS and then factorize object to inject the dependencies 
+into the business logic like persistence layer or another layer.
 ```python
 from ng_factory import factorize
 class persistence(object):
     """ assumes all code needed to connect db and commit data transaction """
     def __init__(this, data):
         import database
-        _dbcon = database.get_connection()
-        data = data
+        this._dbcon = database.get_connection()
+        this.data = data
         
     def save(this):
         this._dbcon.commit(this.data.persist())
