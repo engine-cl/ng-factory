@@ -38,7 +38,6 @@ class persistence(object):
         import database
         self._dbcon = database.get_connection()
         self.data = data
-        
     def save(self):
         self._dbcon.commit(this.data.persist())
 
