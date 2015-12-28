@@ -34,10 +34,10 @@ into the business logic like persistence layer or another layer.
 from ng_factory import factorize
 class persistence(object):
     """ assumes all code needed to connect db and commit data transaction """
-    def __init__(this, data):
+    def __init__(self, data):
         import database
-        this._dbcon = database.get_connection()
-        this.data = data
+        self._dbcon = database.get_connection()
+        self.data = data
         
     def save(this):
         this._dbcon.commit(this.data.persist())
@@ -46,7 +46,7 @@ class DataObjectTypeOne(object):
     """ assumes all serializable function to format the data output """
     @staticmethod
     def persist():
-        return this.get_save_format()
+        return self.get_save_format()
 
 db = persistence(factorize(DataObjectTypeOne))
 db.save()
