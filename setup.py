@@ -20,7 +20,7 @@ setup(
     version='1.0',
     description='Factory ',
     author='Jorge A. Medina',
-    author_email='jorge@bsdchile.cl',
+    author_email='jorge@engine.cl',
     url='http://github.com/engine-cl/ng-factory',
     packages=find_packages(),
     license='BSD',
