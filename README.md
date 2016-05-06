@@ -29,7 +29,7 @@ python test/factory.py
 ```
 ## Example
 Create any module with your atomic class encapsulation with GOPS and then factorize object to inject the dependencies 
-into the business logic like persistence layer or another layer.
+into the business logic like persistence layer or any another layer.
 ```python
 from ng_factory import factorize
 class persistence(object):
@@ -47,7 +47,11 @@ class DataObjectTypeOne(object):
     def persist():
         return self.get_save_format()
 
-db = persistence(factorize(DataObjectTypeOne))
-db.save()
+try:
+    db = persistence(factorize(module=Example, object_type=DataObjectTypeOne))
+except(ArgumentError, NonExistentTypeError, NonExistentModuleError) as e:
+    print("factory error {}".format(e))
+    raise
 
+db.save()
 ```
