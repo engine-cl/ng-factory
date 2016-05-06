@@ -15,11 +15,14 @@ except ImportError:
         """
         return ['ng_factory']
 
-setup(name='ng_factory',
-      version='1.0',
-      description='Factory ',
-      author='Jorge A. Medina',
-      author_email='jorge_at_engine_dot_cl',
-      url='http://github.com/mnothic/factory_poc',
-      packages=find_packages(),
-      license='BSD')
+setup(
+    name='ng_factory',
+    version='1.0',
+    description='Factory ',
+    author='Jorge A. Medina',
+    author_email='jorge@engine.cl',
+    url='http://github.com/engine-cl/ng-factory',
+    packages=find_packages(),
+    license='BSD',
+    keywords=['factory', 'introspective'],
+)
