@@ -18,11 +18,11 @@ except ImportError:
 setup(
     name='ng_factory',
     version='1.0',
-    description='Factory ',
+    description='Instrospective Factory pattern library',
     author='Jorge A. Medina',
     author_email='jorge@engine.cl',
     url='http://github.com/engine-cl/ng-factory',
     packages=find_packages(),
     license='BSD',
-    keywords=['factory', 'introspective'],
+    keywords=['factory', 'introspective']
 )
