@@ -45,6 +45,7 @@ Example
 =======
 Create any module with your atomic class encapsulation with GOPS and then factorize object to inject the dependencies 
 into the business logic like persistence layer or any another layer.
+
 .. code-block:: python
 
   from ng_factory import factorize
