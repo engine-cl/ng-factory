@@ -3,7 +3,7 @@
 #
 # Description
 __author__ = 'themanda'
-
+import os
 from distutils.core import setup
 try:
     from setup_tools import find_packages
@@ -24,7 +24,7 @@ setup(
     name='ng_factory',
     version='1.0',
     description='Instrospective Factory pattern library',
-    long_description='\n\n'.join((read('README.rst'))),
+    long_description='\n\n'.join(read('README.rst')),
     classifiers=[
         'License :: OSI Approved :: BSD Software License',
         'Intended Audience :: Developers',
