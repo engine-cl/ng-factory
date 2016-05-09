@@ -23,7 +23,7 @@ with introspection and don't make the horrible code conditions like in factory e
 
 
 So for it this module factorize any class from any module and works only in python 3 
-for python 2 you have pypi module named .. _Factory: https://pypi.python.org/pypi/Factory/  and maybe is better for you 
+for python 2 you have pypi module named Factory ( https://pypi.python.org/pypi/Factory/ ) and maybe is better for you 
 with more functionality and complexity.
 
 Installation
