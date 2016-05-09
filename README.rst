@@ -13,6 +13,7 @@ Python 3 object factory pattern implementation.
 The principal idea is keep it simple and readable, the main function provide a mechanism to factorize any object
 with introspection and don't make the horrible code conditions like in factory examples:
 .. code-block:: python
+
   def factory(type):
       if type == 'MyClass': 
           return MyClass()
@@ -26,9 +27,11 @@ with more functionality and complexity.
 Installation
 ============
 .. code-block:: bash
-git clone https://github.com/engine-cl/ng_factory.git
-cd ng-factory
-python3 setup.py install
+
+  git clone https://github.com/engine-cl/ng_factory.git
+  cd ng-factory
+  python3 setup.py install
+  pip install ng_factory
 
 
 Testing
@@ -41,6 +44,7 @@ Example
 Create any module with your atomic class encapsulation with GOPS and then factorize object to inject the dependencies 
 into the business logic like persistence layer or any another layer.
 .. code-block:: python
+
   from ng_factory import factorize
   class persistence(object):
       """ assumes all code needed to connect db and commit data transaction """
