@@ -12,6 +12,7 @@ Overview
 Python 3 object factory pattern implementation.
 The principal idea is keep it simple and readable, the main function provide a mechanism to factorize any object
 with introspection and don't make the horrible code conditions like in factory examples:
+
 .. code-block:: python
 
   def factory(type):
@@ -26,6 +27,7 @@ with more functionality and complexity.
 
 Installation
 ============
+
 .. code-block:: bash
 
   git clone https://github.com/engine-cl/ng_factory.git
