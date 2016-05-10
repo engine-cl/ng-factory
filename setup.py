@@ -19,7 +19,7 @@ except ImportError:
 def read(f):
     """ Read a file and get string from it
     :param f: file to read
-    :return: string
+    :return: file content as string
     """
     return open(os.path.join(os.path.dirname(__file__), f)).read().strip()
 
