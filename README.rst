@@ -1,14 +1,18 @@
-Factory implementation
-======================
+Instrospective Factory pattern library
+======================================
+
 .. image:: https://travis-ci.org/engine-cl/ng-factory.svg
     :target: https://travis-ci.org/engine-cl/ng-factory
+
 .. image:: https://codecov.io/github/engine-cl/ng-factory/coverage.svg?branch=master
     :target: https://codecov.io/github/engine-cl/ng-factory?branch=master
+
 .. image:: https://www.quantifiedcode.com/api/v1/project/f57003898f714494b2a6f2bb66516a18/badge.svg
     :target: https://www.quantifiedcode.com/app/project/f57003898f714494b2a6f2bb66516a18
 
 Overview
-========
+--------
+
 Python 3 object factory pattern implementation.
 The principal idea is keep it simple and readable, the main function provide a mechanism to factorize any object
 with introspection and don't make the horrible code conditions like in factory examples:
@@ -28,7 +32,7 @@ with more functionality and complexity.
 .. _Factory: https://pypi.python.org/pypi/Factory/
 
 Installation
-============
+------------
 
 .. code-block:: bash
 
@@ -39,14 +43,16 @@ Installation
 
 
 Testing
-=======
+-------
+
 .. code-block:: python
 
   python test/factory.py
 
 
 Example
-=======
+-------
+
 Create any module with your atomic class encapsulation with GOPS and then factorize object to inject the dependencies 
 into the business logic like persistence layer or any another layer.
 

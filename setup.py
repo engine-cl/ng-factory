@@ -3,6 +3,7 @@
 #
 # Description
 __author__ = 'themanda'
+__version__ = '0.6'
 import os
 from distutils.core import setup
 try:
@@ -26,19 +27,19 @@ def read(f):
 
 setup(
     name='ng_factory',
-    version='1.0',
+    version=__version__,
     description='Instrospective Factory pattern library',
-    long_description='\n\n'.join(read('README.rst')),
+    long_description='\n\n'.join((read('README.rst'), '')),
     classifiers=[
-        'License :: OSI Approved :: BSD Software License',
+        'License :: OSI Approved :: BSD License',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
-        'Topic :: Pattern :: Factory'],
+        'Topic :: Software Development :: Libraries :: Python Modules'],
     author='Jorge A. Medina',
-    author_email='jorge@engine.cl',
+    author_email='j@engine.cl',
     url='http://github.com/engine-cl/ng-factory',
     packages=find_packages(),
     license='BSD',
