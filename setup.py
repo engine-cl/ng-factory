@@ -3,7 +3,7 @@
 #
 # Description
 __author__ = 'themanda'
-__version__ = '0.6'
+__version__ = '0.1'
 import os
 from distutils.core import setup
 try:
@@ -29,7 +29,7 @@ setup(
     name='ng_factory',
     version=__version__,
     description='Instrospective Factory pattern library',
-    long_description='\n\n'.join((read('README.rst'), '')),
+    long_description=read('README.rst'),
     classifiers=[
         'License :: OSI Approved :: BSD License',
         'Intended Audience :: Developers',
