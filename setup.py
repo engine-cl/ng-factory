@@ -3,7 +3,7 @@
 #
 # Description
 __author__ = 'themanda'
-__version__ = '0.9'
+__version__ = '0.9.1'
 import os
 from distutils.core import setup
 try:
