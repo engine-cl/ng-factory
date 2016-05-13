@@ -29,7 +29,8 @@ with introspection and don't make the horrible code conditions like in factory e
 So for it this module factorize any class from any module and works only in python 3 
 for python 2 you have pypi module named Factory_ and maybe is better for you 
 with more functionality and complexity.
-.. _Factory: https://pypi.python.org/pypi/Factory/
+
+.. _Factory: https://pypi.python.org/pypi/Factory
 
 Installation
 ------------
@@ -45,7 +46,7 @@ Installation
 Testing
 -------
 
-.. code-block:: python
+.. code-block:: shell
 
   python test/factory.py
 
