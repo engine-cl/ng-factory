@@ -10,7 +10,7 @@ try:
     from setup_tools import find_packages
 except ImportError:
     def find_packages():
-        """When setup_tools find_packages fail because are not installed or something
+        """When setup_tools find_packages fail because are not installed or some similar behavior
         this overwrite it and return default package.
         :return: list
         """
