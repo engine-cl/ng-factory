@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Description
-__author__ = 'themanda'
+__author__ = "Jorge A. Medina"
 from inspect import getmembers, isclass
 
 

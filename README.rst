@@ -15,7 +15,9 @@ Overview
 
 Python 3 object factory pattern implementation.
 The principal idea is keep it simple and readable, the main function provide a mechanism to factorize any object
-with introspection and don't make the horrible code conditions like in factory examples:
+with introspection and don't make the horrible code conditions commonly showed in factory_ examples:
+
+.. _factory: http://python-3-patterns-idioms-test.readthedocs.io/en/latest/Factory.html
 
 .. code-block:: python
 
@@ -26,11 +28,12 @@ with introspection and don't make the horrible code conditions like in factory e
           return MyOtherClass()
 
 
-So for it this module factorize any class from any module and works only in python 3 
-for python 2 you have pypi module named Factory_ and maybe is better for you 
-with more functionality and complexity.
+So, this module factorize any class from any module and works only in python 3
+for python 2 don't make any sense wasted time adapting differences between both version
+also is important know which this module only factorize classes or functions from modules
+so if can't __import__ them, raises an exception, and if you want factorize class or function
+who is in the same module you need make it reachable to the __import__ statement
 
-.. _Factory: https://pypi.python.org/pypi/Factory
 
 Installation
 ------------
