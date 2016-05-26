@@ -1,9 +1,5 @@
-# !/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# Description
-__author__ = 'themanda'
-__version__ = '0.1.0'
+# !/usr/bin/env python3.5
+__version__ = '0.1.1'
 import os
 from distutils.core import setup
 try:

@@ -1,9 +1,5 @@
-__author__ = 'themanda'
-try:
-    import unittest2 as unittest
-except ImportError:
-    import unittest
-from ng_factory.factory import factorize, ArgumentError, NonExistentTypeError, NonExistentModuleError
+import unittest
+from ng_factory import factorize, ArgumentError, NonExistentTypeError, NonExistentModuleError
 
 
 class FactoryTests(unittest.TestCase):

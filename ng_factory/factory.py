@@ -1,8 +1,4 @@
-# !/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# Description
-__author__ = "Jorge A. Medina"
+# !/usr/bin/env python3.5
 from inspect import getmembers, isclass
 
 
