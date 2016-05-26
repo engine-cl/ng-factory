@@ -1,5 +1,1 @@
-# !/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# Description
-__author__ = 'themanda'
+from .factory import factorize, ArgumentError, NonExistentTypeError, NonExistentModuleError
