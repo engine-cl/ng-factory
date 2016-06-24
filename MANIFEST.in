@@ -1,0 +1,4 @@
+include LICENSE.txt
+include README.rst
+graft ng_factory
+graft test
